@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h2>chariDEV.</h2>
+             
+    </div>
+    <div class="content">
+        <h1>Hi, I'm <span>Charite</span></h1>
+        <p> I'm a Software Engineer with expertise in Web Development and proficiency in HTML, CSS, Python, C++, and JavaScript. My experience and commitment to continuous learning equip me to design and implement robust solutions. Let's collaborate on dynamic projects in software development.</p>
+        
+        <div>
+            <button id="hireButton" type="button"><span></span>Hire me</button>
+          </div>
+
+     </div>
+    <div class="home-sci"> 
+        <a href="https://github.com/charite-uwatwembi"><i class='bx bxl-github'></i></a>
+        <a href="https://twitter.com/twembicharite"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.linkedin.com/in/uwatwembi-charite-7a1022231/"><i class='bx bxl-linkedin'></i></a>
+
+    </div>
+    </div>
+
+    
+
+    <div id="popup" class="popup">
+        <p>Contact me at: chariteuwatwembi@gmail.com</p>
+      </div>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  
+  var hireButton = document.getElementById("hireButton");
+  var popup = document.getElementById("popup");
+
+ 
+  hireButton.addEventListener("click", function() {
+    
+    popup.style.display = "block";
+    
+    setTimeout(function() {
+      popup.style.display = "none";
+    }, 10000); 
+  });
+});
+    </script>
+    
+</body>
+</html>
